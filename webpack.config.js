@@ -45,6 +45,18 @@ module.exports = {
 					name: '[name].[ext]',
 				},
 			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'assets/fonts',
+						},
+					},
+				],
+			},
 		],
 	},
 	plugins: [
@@ -54,7 +66,7 @@ module.exports = {
 			favicon: './src/images/favicon-32x32.png',
 		}),
 		new MiniCssExtractPlugin({
-			filename: 'assets/[name].css',
+			filename: 'assets/css/[name].css',
 		}),
 	],
 };

@@ -1,3 +1,30 @@
+:root {
+	/* Primary */
+	--StrongCyan: hsl(171, 66%, 44%);
+	--LightBlue: hsl(233, 100%, 69%);
+	/* Neutral */
+	--DarkGrayishBlue: hsl(210, 10%, 33%);
+	--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+@font-face {
+	font-family: 'Bai Jamjuree', sans-serif;
+	src: url('./fonts/BaiJamjuree-Regular.ttf') format('ttf'), url('./fonts/BaiJamjuree-SemiBold.ttf') format('ttf');
+}
+
+*::before,
+*::after,
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
