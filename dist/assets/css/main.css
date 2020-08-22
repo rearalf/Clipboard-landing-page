@@ -1,0 +1,413 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap);
+:root {
+	/* Primary */
+	--StrongCyan: hsl(171, 66%, 44%);
+	--LightBlue: hsl(233, 100%, 69%);
+	/* Neutral */
+	--DarkGrayishBlue: hsl(210, 10%, 33%);
+	--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+@font-face {
+	font-family: 'Bai Jamjuree', sans-serif;
+	src: url(assets/fonts/BaiJamjuree-Regular.ttf) format('ttf'), url(assets/fonts/BaiJamjuree-SemiBold.ttf) format('ttf');
+}
+
+*::before,
+*::after,
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Bai Jamjuree', sans-serif;
+	overflow-x: hidden;
+}
+
+.title {
+	color: var(--DarkGrayishBlue);
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.6em;
+	margin-bottom: 1rem;
+}
+
+.text {
+	color: var(--GrayishBlue);
+	font-weight: 400;
+	text-align: center;
+	margin: 0 5px 3rem;
+	font-size: 15px;
+	line-height: 2rem;
+}
+
+.img_head {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.head {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 8rem auto;
+	width: 80%;
+}
+
+.logo_head {
+	margin-bottom: 4rem;
+}
+
+.group_button {
+	width: 100%;
+}
+
+.group_button .btn:first-child {
+	margin-right: 1rem;
+	background-color: var(--StrongCyan);
+	box-shadow: 0 4px 0 0 hsl(171, 66%, 34%), 0 5px 20px 0 hsl(171, 66%, 34%);
+	margin-bottom: 2rem;
+}
+
+.group_button .btn:last-child {
+	margin-right: 1rem;
+	background-color: var(--LightBlue);
+	box-shadow: 0 4px 0 0 hsl(233, 100%, 59%), 0 5px 20px 0 hsl(233, 100%, 59%);
+	margin-bottom: 2rem;
+}
+
+.btn:active,
+.btn:focus,
+.btn {
+	border: none;
+	outline: none;
+	color: #ffffff;
+	border-radius: 2rem;
+	width: 100%;
+	padding: 1rem 0;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.btn:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+
+.article {
+	margin: 0 auto 5rem;
+	width: 80%;
+}
+
+.article .title {
+	font-size: 1.33em;
+}
+
+.article .text {
+	font-size: 15px;
+}
+
+.section1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 6rem;
+}
+
+.section1 img {
+	width: 90%;
+}
+
+.section2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.section2 img {
+	width: 80%;
+	margin-bottom: 2rem;
+}
+
+.services {
+	margin: 0 auto 5rem;
+	width: 80%;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service img {
+	width: 40px;
+	margin-bottom: 2rem;
+}
+
+.service .title {
+	font-size: 1.5em;
+}
+
+.service .text {
+	text-align: center;
+	font-size: 1em;
+	margin: 0;
+}
+
+.brand {
+	display: flex;
+	margin: 0 auto 5rem;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section4 {
+	margin: 0 auto 5rem;
+	width: 80%;
+}
+
+.section4 .title {
+	font-size: 1.9em;
+}
+
+.section4 .text {
+	font-size: 1em;
+}
+
+.footer {
+	width: 100%;
+	background-color: hsl(220, 18%, 97%);
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-gap: 30px;
+	color: var(--GrayishBlue);
+}
+
+.startFooter {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	padding: 4rem 0 0;
+	color: var(--DarkGrayishBlue);
+}
+
+.startFooter .logo {
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
+.list:last-child {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.item {
+	margin: 0 0 2rem;
+}
+
+.item:hover a {
+	color: var(--StrongCyan);
+}
+
+.item svg {
+	fill: var(--DarkGrayishBlue);
+}
+
+.item:hover svg {
+	fill: #26baa4;
+}
+
+@media screen and (max-width: 1024px) {
+	.section1 {
+		flex-direction: column;
+	}
+
+	.section1 img {
+		margin-bottom: 3rem;
+	}
+
+	.section2 .article:first-child {
+		margin-bottom: 0;
+	}
+
+	.service {
+		margin-bottom: 4rem;
+	}
+
+	.brand {
+		flex-direction: column;
+	}
+
+	.brand img {
+		margin-bottom: 4rem;
+	}
+
+	.startFooter {
+		flex-direction: column;
+		width: 40%;
+	}
+
+	.list {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.head {
+		width: 60%;
+	}
+
+	.title {
+		font-size: 2.5em;
+	}
+
+	.text {
+		font-size: 1.17em;
+	}
+
+	.group_button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.btn:active,
+	.btn:focus,
+	.btn {
+		width: auto;
+		padding: 1rem 3rem;
+	}
+
+	.group_button .btn:first-child {
+		margin-bottom: 0;
+	}
+
+	.group_button .btn:last-child {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	.article {
+		width: 60%;
+	}
+
+	.article .title {
+		font-size: 2em;
+	}
+
+	.article .text {
+		font-size: 1.06em;
+		margin: 0;
+	}
+
+	.section1 img {
+		width: 100%;
+		-webkit-transform: translateX(-2rem);
+		transform: translateX(-2rem);
+	}
+
+	.contenArticle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 120px 0 0;
+	}
+
+	.contenArticle .article {
+		margin: 0 0 4rem;
+		width: auto;
+	}
+
+	.contenArticle .article .text,
+	.contenArticle .article .title {
+		text-align: left;
+	}
+
+	.contenArticle .article .title {
+		font-size: 1.39em;
+	}
+
+	.contenArticle .article .text {
+		font-size: 1em;
+	}
+
+	.section2 img {
+		width: 60%;
+	}
+
+	.section4,
+	.section2 .article:first-child {
+		width: 50%;
+	}
+
+	.services {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+	}
+
+	.startFooter {
+		width: 80%;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.startFooter .logo {
+		width: 10%;
+		margin-bottom: 0;
+	}
+
+	.list:last-child {
+		width: auto;
+	}
+
+	.list:last-child .item {
+		margin: 0 1rem;
+	}
+
+	.list:nth-child(4n) .item {
+		margin: 0;
+	}
+}
+
+.attribution {
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	width: 80%;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--DarkGrayishBlue);
+}
+
+.attribution a:hover {
+	color: var(--StrongCyan);
+}
